@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA2B5B642B9E671000120EDE /* RepurposeVidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5B632B9E671000120EDE /* RepurposeVidsApp.swift */; };
+		AA2B5B662B9E671000120EDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5B652B9E671000120EDE /* ContentView.swift */; };
+		AA2B5B682B9E671100120EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2B5B672B9E671100120EDE /* Assets.xcassets */; };
+		AA2B5B6B2B9E671100120EDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2B5B6A2B9E671100120EDE /* Preview Assets.xcassets */; };
+		AA2B5B752B9E671100120EDE /* RepurposeVidsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2B5B742B9E671100120EDE /* RepurposeVidsTests.swift */; };
+		AA4BB0CB2B9E6C9B0067DC2B /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA4BB0CA2B9E6C9B0067DC2B /* FacebookCore */; };
+		AA4BB0CD2B9E6CA70067DC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */; };
+		AA4BB0CF2B9E6E600067DC2B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = AA4BB0CE2B9E6E600067DC2B /* FacebookLogin */; };
+		AA4BB0D12B9E71000067DC2B /* FaceBookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA2B5B712B9E671100120EDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA2B5B582B9E671000120EDE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA2B5B5F2B9E671000120EDE;
+			remoteInfo = RepurposeVids;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA2B5B602B9E671000120EDE /* RepurposeVids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RepurposeVids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2B5B632B9E671000120EDE /* RepurposeVidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepurposeVidsApp.swift; sourceTree = "<group>"; };
+		AA2B5B652B9E671000120EDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AA2B5B672B9E671100120EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA2B5B6A2B9E671100120EDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA2B5B702B9E671100120EDE /* RepurposeVidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepurposeVidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2B5B742B9E671100120EDE /* RepurposeVidsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepurposeVidsTests.swift; sourceTree = "<group>"; };
+		AA4BB0C62B9E691E0067DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA4BB0C72B9E6BA70067DC2B /* RepurposeVids.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RepurposeVids.entitlements; sourceTree = "<group>"; };
+		AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookLoginViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA2B5B5D2B9E671000120EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4BB0CF2B9E6E600067DC2B /* FacebookLogin in Frameworks */,
+				AA4BB0CB2B9E6C9B0067DC2B /* FacebookCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2B5B6D2B9E671100120EDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA2B5B572B9E671000120EDE = {
+			isa = PBXGroup;
+			children = (
+				AA2B5B622B9E671000120EDE /* RepurposeVids */,
+				AA2B5B732B9E671100120EDE /* RepurposeVidsTests */,
+				AA2B5B612B9E671000120EDE /* Products */,
+				AA4BB0C92B9E6C9B0067DC2B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AA2B5B612B9E671000120EDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B5B602B9E671000120EDE /* RepurposeVids.app */,
+				AA2B5B702B9E671100120EDE /* RepurposeVidsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA2B5B622B9E671000120EDE /* RepurposeVids */ = {
+			isa = PBXGroup;
+			children = (
+				AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */,
+				AA2B5B632B9E671000120EDE /* RepurposeVidsApp.swift */,
+				AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */,
+				AA2B5B652B9E671000120EDE /* ContentView.swift */,
+				AA4BB0C52B9E67440067DC2B /* Resources */,
+			);
+			path = RepurposeVids;
+			sourceTree = "<group>";
+		};
+		AA2B5B692B9E671100120EDE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B5B6A2B9E671100120EDE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA2B5B732B9E671100120EDE /* RepurposeVidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B5B742B9E671100120EDE /* RepurposeVidsTests.swift */,
+			);
+			path = RepurposeVidsTests;
+			sourceTree = "<group>";
+		};
+		AA4BB0C52B9E67440067DC2B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA4BB0C72B9E6BA70067DC2B /* RepurposeVids.entitlements */,
+				AA4BB0C62B9E691E0067DC2B /* Info.plist */,
+				AA2B5B672B9E671100120EDE /* Assets.xcassets */,
+				AA2B5B692B9E671100120EDE /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AA4BB0C92B9E6C9B0067DC2B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA2B5B5F2B9E671000120EDE /* RepurposeVids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2B5B842B9E671100120EDE /* Build configuration list for PBXNativeTarget "RepurposeVids" */;
+			buildPhases = (
+				AA2B5B5C2B9E671000120EDE /* Sources */,
+				AA2B5B5D2B9E671000120EDE /* Frameworks */,
+				AA2B5B5E2B9E671000120EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RepurposeVids;
+			packageProductDependencies = (
+				AA4BB0CA2B9E6C9B0067DC2B /* FacebookCore */,
+				AA4BB0CE2B9E6E600067DC2B /* FacebookLogin */,
+			);
+			productName = RepurposeVids;
+			productReference = AA2B5B602B9E671000120EDE /* RepurposeVids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA2B5B6F2B9E671100120EDE /* RepurposeVidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA2B5B872B9E671100120EDE /* Build configuration list for PBXNativeTarget "RepurposeVidsTests" */;
+			buildPhases = (
+				AA2B5B6C2B9E671100120EDE /* Sources */,
+				AA2B5B6D2B9E671100120EDE /* Frameworks */,
+				AA2B5B6E2B9E671100120EDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA2B5B722B9E671100120EDE /* PBXTargetDependency */,
+			);
+			name = RepurposeVidsTests;
+			productName = RepurposeVidsTests;
+			productReference = AA2B5B702B9E671100120EDE /* RepurposeVidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA2B5B582B9E671000120EDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					AA2B5B5F2B9E671000120EDE = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					AA2B5B6F2B9E671100120EDE = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = AA2B5B5F2B9E671000120EDE;
+					};
+				};
+			};
+			buildConfigurationList = AA2B5B5B2B9E671000120EDE /* Build configuration list for PBXProject "RepurposeVids" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA2B5B572B9E671000120EDE;
+			packageReferences = (
+				AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+			);
+			productRefGroup = AA2B5B612B9E671000120EDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA2B5B5F2B9E671000120EDE /* RepurposeVids */,
+				AA2B5B6F2B9E671100120EDE /* RepurposeVidsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA2B5B5E2B9E671000120EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2B5B6B2B9E671100120EDE /* Preview Assets.xcassets in Resources */,
+				AA2B5B682B9E671100120EDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2B5B6E2B9E671100120EDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA2B5B5C2B9E671000120EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA4BB0D12B9E71000067DC2B /* FaceBookLoginViewController.swift in Sources */,
+				AA4BB0CD2B9E6CA70067DC2B /* AppDelegate.swift in Sources */,
+				AA2B5B662B9E671000120EDE /* ContentView.swift in Sources */,
+				AA2B5B642B9E671000120EDE /* RepurposeVidsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA2B5B6C2B9E671100120EDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2B5B752B9E671100120EDE /* RepurposeVidsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA2B5B722B9E671100120EDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA2B5B5F2B9E671000120EDE /* RepurposeVids */;
+			targetProxy = AA2B5B712B9E671100120EDE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AA2B5B822B9E671100120EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA2B5B832B9E671100120EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA2B5B852B9E671100120EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RepurposeVids/Resources/RepurposeVids.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RepurposeVids/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepurposeVids/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AA2B5B862B9E671100120EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RepurposeVids/Resources/RepurposeVids.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RepurposeVids/Resources/Preview Content\"";
+				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RepurposeVids/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA2B5B882B9E671100120EDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepurposeVids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RepurposeVids";
+			};
+			name = Debug;
+		};
+		AA2B5B892B9E671100120EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RepurposeVids.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RepurposeVids";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA2B5B5B2B9E671000120EDE /* Build configuration list for PBXProject "RepurposeVids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2B5B822B9E671100120EDE /* Debug */,
+				AA2B5B832B9E671100120EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2B5B842B9E671100120EDE /* Build configuration list for PBXNativeTarget "RepurposeVids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2B5B852B9E671100120EDE /* Debug */,
+				AA2B5B862B9E671100120EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA2B5B872B9E671100120EDE /* Build configuration list for PBXNativeTarget "RepurposeVidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA2B5B882B9E671100120EDE /* Debug */,
+				AA2B5B892B9E671100120EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/facebook/facebook-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AA4BB0CA2B9E6C9B0067DC2B /* FacebookCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookCore;
+		};
+		AA4BB0CE2B9E6E600067DC2B /* FacebookLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
+			productName = FacebookLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AA2B5B582B9E671000120EDE /* Project object */;
+}
