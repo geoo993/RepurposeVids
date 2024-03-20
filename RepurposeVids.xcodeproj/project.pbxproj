@@ -15,7 +15,11 @@
 		AA4BB0CB2B9E6C9B0067DC2B /* FacebookCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA4BB0CA2B9E6C9B0067DC2B /* FacebookCore */; };
 		AA4BB0CD2B9E6CA70067DC2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */; };
 		AA4BB0CF2B9E6E600067DC2B /* FacebookLogin in Frameworks */ = {isa = PBXBuildFile; productRef = AA4BB0CE2B9E6E600067DC2B /* FacebookLogin */; };
-		AA4BB0D12B9E71000067DC2B /* FaceBookLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */; };
+		AA4BB0D12B9E71000067DC2B /* FacebookLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4BB0D02B9E71000067DC2B /* FacebookLoginView.swift */; };
+		AA8A59CA2BA77D9100CD5568 /* DeeplinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8A59C92BA77D9100CD5568 /* DeeplinkView.swift */; };
+		AA8A59CD2BA789A000CD5568 /* TikTokOpenAuthSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AA8A59CC2BA789A000CD5568 /* TikTokOpenAuthSDK */; };
+		AA8A59CF2BA789A000CD5568 /* TikTokOpenSDKCore in Frameworks */ = {isa = PBXBuildFile; productRef = AA8A59CE2BA789A000CD5568 /* TikTokOpenSDKCore */; };
+		AA8A59D12BA789A000CD5568 /* TikTokOpenShareSDK in Frameworks */ = {isa = PBXBuildFile; productRef = AA8A59D02BA789A000CD5568 /* TikTokOpenShareSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,8 @@
 		AA4BB0C62B9E691E0067DC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA4BB0C72B9E6BA70067DC2B /* RepurposeVids.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RepurposeVids.entitlements; sourceTree = "<group>"; };
 		AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBookLoginViewController.swift; sourceTree = "<group>"; };
+		AA4BB0D02B9E71000067DC2B /* FacebookLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookLoginView.swift; sourceTree = "<group>"; };
+		AA8A59C92BA77D9100CD5568 /* DeeplinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +52,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA8A59D12BA789A000CD5568 /* TikTokOpenShareSDK in Frameworks */,
+				AA8A59CF2BA789A000CD5568 /* TikTokOpenSDKCore in Frameworks */,
 				AA4BB0CF2B9E6E600067DC2B /* FacebookLogin in Frameworks */,
+				AA8A59CD2BA789A000CD5568 /* TikTokOpenAuthSDK in Frameworks */,
 				AA4BB0CB2B9E6C9B0067DC2B /* FacebookCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,8 +94,9 @@
 			children = (
 				AA4BB0CC2B9E6CA70067DC2B /* AppDelegate.swift */,
 				AA2B5B632B9E671000120EDE /* RepurposeVidsApp.swift */,
-				AA4BB0D02B9E71000067DC2B /* FaceBookLoginViewController.swift */,
+				AA4BB0D02B9E71000067DC2B /* FacebookLoginView.swift */,
 				AA2B5B652B9E671000120EDE /* ContentView.swift */,
+				AA8A59C92BA77D9100CD5568 /* DeeplinkView.swift */,
 				AA4BB0C52B9E67440067DC2B /* Resources */,
 			);
 			path = RepurposeVids;
@@ -146,6 +155,9 @@
 			packageProductDependencies = (
 				AA4BB0CA2B9E6C9B0067DC2B /* FacebookCore */,
 				AA4BB0CE2B9E6E600067DC2B /* FacebookLogin */,
+				AA8A59CC2BA789A000CD5568 /* TikTokOpenAuthSDK */,
+				AA8A59CE2BA789A000CD5568 /* TikTokOpenSDKCore */,
+				AA8A59D02BA789A000CD5568 /* TikTokOpenShareSDK */,
 			);
 			productName = RepurposeVids;
 			productReference = AA2B5B602B9E671000120EDE /* RepurposeVids.app */;
@@ -199,6 +211,7 @@
 			mainGroup = AA2B5B572B9E671000120EDE;
 			packageReferences = (
 				AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */,
+				AA8A59CB2BA7897B00CD5568 /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */,
 			);
 			productRefGroup = AA2B5B612B9E671000120EDE /* Products */;
 			projectDirPath = "";
@@ -234,8 +247,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4BB0D12B9E71000067DC2B /* FaceBookLoginViewController.swift in Sources */,
+				AA4BB0D12B9E71000067DC2B /* FacebookLoginView.swift in Sources */,
 				AA4BB0CD2B9E6CA70067DC2B /* AppDelegate.swift in Sources */,
+				AA8A59CA2BA77D9100CD5568 /* DeeplinkView.swift in Sources */,
 				AA2B5B662B9E671000120EDE /* ContentView.swift in Sources */,
 				AA2B5B642B9E671000120EDE /* RepurposeVidsApp.swift in Sources */,
 			);
@@ -385,10 +399,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RepurposeVids/Resources/RepurposeVids.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RepurposeVids/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TTRX47ZAU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RepurposeVids/Resources/Info.plist;
@@ -404,6 +421,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RepurposeVids Dev Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -420,10 +439,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = RepurposeVids/Resources/RepurposeVids.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RepurposeVids/Resources/Preview Content\"";
-				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = TTRX47ZAU4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RepurposeVids/Resources/Info.plist;
@@ -439,6 +461,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVids;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RepurposeVids Dev Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -454,14 +478,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -478,14 +503,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TTRX47ZAU4;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.1;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gqnmedia.RepurposeVidsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -538,6 +564,14 @@
 				minimumVersion = 14.1.0;
 			};
 		};
+		AA8A59CB2BA7897B00CD5568 /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tiktok/tiktok-opensdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -550,6 +584,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA4BB0C82B9E6C8B0067DC2B /* XCRemoteSwiftPackageReference "facebook-ios-sdk" */;
 			productName = FacebookLogin;
+		};
+		AA8A59CC2BA789A000CD5568 /* TikTokOpenAuthSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA8A59CB2BA7897B00CD5568 /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */;
+			productName = TikTokOpenAuthSDK;
+		};
+		AA8A59CE2BA789A000CD5568 /* TikTokOpenSDKCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA8A59CB2BA7897B00CD5568 /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */;
+			productName = TikTokOpenSDKCore;
+		};
+		AA8A59D02BA789A000CD5568 /* TikTokOpenShareSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA8A59CB2BA7897B00CD5568 /* XCRemoteSwiftPackageReference "tiktok-opensdk-ios" */;
+			productName = TikTokOpenShareSDK;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

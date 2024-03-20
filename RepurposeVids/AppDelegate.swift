@@ -1,4 +1,5 @@
 import FacebookCore
+import TikTokOpenSDKCore
 import UIKit
 
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -10,6 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             application,
             didFinishLaunchingWithOptions: launchOptions
         )
+        
         return true
     }
     
@@ -18,11 +20,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         open url: URL,
         options: [UIApplication.OpenURLOptionsKey : Any] = [:]
     ) -> Bool {
-        ApplicationDelegate.shared.application(
+        if ApplicationDelegate.shared.application(
             app,
             open: url,
             sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
             annotation: options[UIApplication.OpenURLOptionsKey.annotation]
-        )
+        ) {
+            return true
+        }
+        
+        if TikTokURLHandler.handleOpenURL(url) {
+            return true
+        }
+        
+        return false
+    }
+    
+    func application(
+        _ application: UIApplication,
+        continue userActivity: NSUserActivity,
+        restorationHandler: @escaping ([any UIUserActivityRestoring]?) -> Void
+    ) -> Bool {
+        TikTokURLHandler.handleOpenURL(userActivity.webpageURL)
     }
 }
